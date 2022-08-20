@@ -1,0 +1,21 @@
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "6006:6006"
+    volumes:
+      - .:/web
+    environment:
+      - NODE_OPTIONS=--openssl-legacy-provider
+
+  e2e:
+    image: "cypress/included:latest"
+    entrypoint: cypress open --project /e2e
+    environment:
+      - DISPLAY
+    user: root
+    working_dir: /e2e
+    volumes:
+      - ./e2e:/e2e
+      - /tmp/.X11-unix:/tmp/.X11-unix

@@ -1,0 +1,38 @@
+{
+  "name": "storybook-cypress-docker",
+  "version": "1.0.0",
+  "description": "This is an example on how to test cypress with storybook via docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinKP17/storybook-cypress-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinKP17/storybook-cypress-docker/issues"
+  },
+  "homepage": "https://github.com/KevinKP17/storybook-cypress-docker#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "storybook": "^6.5.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/react": "^6.1.21",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5"
+  }
+}
